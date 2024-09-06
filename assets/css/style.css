@@ -68,7 +68,7 @@ button {
     font-size: 1.6;
     font-weight: 600;
     border: none;
-    background: #ff5b2e;
+    background: #ff5b2e !important;
 }
 
 .svg-btn {
@@ -821,6 +821,10 @@ button {
     background: #fff6ed;
 }
 
+.pricing-container {
+    width: 994px;
+}
+
 .pricing__heading,
 .pricing__desc {
     text-align: center;
@@ -895,4 +899,68 @@ button {
     + .pricing__switch-label
     .pricing__switch-value:nth-of-type(1) {
     color: #ff5b2e;
+}
+
+.pricing__price {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+}
+
+.pricing-card {
+    padding: 30px 28px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.pricing-card__text {
+    font-size: 1.2rem;
+    line-height: 1; /* 100% */
+    color: #ff5b2e;
+}
+
+.pricing-card__heading {
+    margin-top: 8px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+    color: #3f4065;
+}
+
+.pricing-card__price {
+    display: block;
+    margin-top: 24px;
+    font-family: Sora, sans-serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.03; /* 103.03% */
+    color: #000958;
+}
+
+.pricing-card__btn {
+    --height: 44px;
+
+    margin-top: 22px;
+    width: 246px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    background: transparent;
+    cursor: pointer;
+}
+
+.pricing-card__ul {
+    margin-top: 24px;
+}
+
+.pricing-card__li {
+    display: flex;
+    margin-top: 18px;
+    font-size: 1.4rem;
+    line-height: 1; /* 100% */
+    color: #656689;
+}
+
+.pricing-card__li::before {
+    content: url(../icon/pricing-check.svg);
+    margin-right: 12px;
 }
