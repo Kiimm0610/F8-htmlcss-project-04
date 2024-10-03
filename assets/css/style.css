@@ -1010,10 +1010,11 @@ button {
 }
 
 .review-item {
+    width: 100%;
     display: flex;
-    flex-shrink: 0;
     align-items: center;
     gap: 115px;
+    flex-shrink: 0;
 }
 
 .review-item__media {
