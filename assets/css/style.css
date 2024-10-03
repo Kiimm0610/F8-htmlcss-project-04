@@ -1093,3 +1093,23 @@ button {
     width: calc(var(--ratio) * 3);
     background: #ff5b2e;
 }
+/* Blog */
+.blog__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog__top-desc {
+    margin-top: 0;
+    width: 350px;
+}
+
+.blog-cta {
+    --height: 56px;
+
+    margin-top: 24px;
+    min-width: 182px;
+    border-color: #ff5b2e99;
+    color: #ff5b2e;
+}
